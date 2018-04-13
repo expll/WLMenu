@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WLMenu"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "A short description of WLMenu."
 
   # This description is used to generate tags and improve search results.

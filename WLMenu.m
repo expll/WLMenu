@@ -21,20 +21,26 @@
             self.header.center = CGPointMake(self.header.center.x, self.header.center.y-64);
             self.footer.center = CGPointMake(self.footer.center.x, self.footer.center.y+55);
             self.floatBtn.center = CGPointMake(self.floatBtn.center.x, self.floatBtn.center.y+164);
+            [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
+            
         } completion:^(BOOL finished) {
             self.hidden = YES;
+            
         }];
     } else {
-        // 影藏
+        // 显示
         [UIView animateWithDuration:0.3 animations:^{
             self.header.center = CGPointMake(self.header.center.x, self.header.center.y+64);
             self.footer.center = CGPointMake(self.footer.center.x, self.footer.center.y-55);
             self.floatBtn.center = CGPointMake(self.floatBtn.center.x, self.floatBtn.center.y-164);
+            [[UIApplication sharedApplication] setStatusBarHidden:NO animated:YES];
+            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+            
         } completion:^(BOOL finished) {
             
         }];
-
-
+        
+        
     }
 }
 
