@@ -21,6 +21,8 @@
             self.header.center = CGPointMake(self.header.center.x, self.header.center.y-64);
             self.footer.center = CGPointMake(self.footer.center.x, self.footer.center.y+55);
             self.floatBtn.center = CGPointMake(self.floatBtn.center.x, self.floatBtn.center.y+164);
+        } completion:^(BOOL finished) {
+            self.hidden = YES;
         }];
     } else {
         // 影藏
@@ -28,7 +30,11 @@
             self.header.center = CGPointMake(self.header.center.x, self.header.center.y+64);
             self.footer.center = CGPointMake(self.footer.center.x, self.footer.center.y-55);
             self.floatBtn.center = CGPointMake(self.floatBtn.center.x, self.floatBtn.center.y-164);
+        } completion:^(BOOL finished) {
+            
         }];
+
+
     }
 }
 

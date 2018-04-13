@@ -17,9 +17,6 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmn-0Z-RAK" customClass="UIControl">
                     <rect key="frame" x="0.0" y="64" width="375" height="548"/>
-                    <connections>
-                        <action selector="clickBackground:" destination="iN0-l3-epB" eventType="touchUpInside" id="ldH-6e-JHm"/>
-                    </connections>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-kE-cVq">
                     <rect key="frame" x="302" y="540" width="55" height="55"/>
