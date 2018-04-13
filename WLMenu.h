@@ -15,4 +15,6 @@
 @property (nonatomic, strong)IBOutlet UIView *footer;
 @property (nonatomic, strong)IBOutlet UIButton *floatBtn;
 
+- (IBAction)clickBackground:(id)sender;
+
 @end
