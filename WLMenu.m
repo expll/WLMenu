@@ -47,12 +47,14 @@
 // 设置配置
 - (void)setData:(NSDictionary *)dic1 {
     
-    NSDictionary *dic = @{@"brightness":@(0.67),
-            @"fan":@(1),
-            @"lineSpacing":@(2),
-            @"eye":@(1),
-            @"color":@(2)};
-    
+    NSDictionary *dic = dic1;
+    if (dic == nil) {
+        dic = @{@"brightness":@(0.67),
+                @"fan":@(1),
+                @"lineSpacing":@(2),
+                @"eye":@(1),
+                @"color":@(2)};
+    }
     
     CGFloat brightness = [dic[@"brightness"] floatValue];
     NSInteger fan = [dic[@"fan"] integerValue];
