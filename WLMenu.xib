@@ -80,7 +80,7 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVw-hU-1Gb">
                             <rect key="frame" x="267" y="71" width="30" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="setting_font_fan.png"/>
+                            <state key="normal" image="setting_font_default.png"/>
                             <connections>
                                 <action selector="callback_jian" destination="iN0-l3-epB" eventType="touchUpInside" id="HD1-3L-3ni"/>
                             </connections>
@@ -50765,7 +50765,7 @@ vgAt28EALdvGAC3bzgAt29EALdvjAC3b5gAt2+sAAAAAAAAEAQAAAAAAAAA+AAAAAAAAAAAAAAAAAC3b
         <image name="reading_setting.png" width="23" height="18"/>
         <image name="setting_eye.png" width="102" height="30"/>
         <image name="setting_font_bigger.png" width="102" height="30"/>
-        <image name="setting_font_fan.png" width="30" height="30"/>
+        <image name="setting_font_default.png" width="30" height="30"/>
         <image name="setting_font_more.png" width="30" height="30"/>
         <image name="setting_font_smaller_normal.png" width="102" height="30"/>
         <image name="setting_space_big.png" width="61" height="30"/>

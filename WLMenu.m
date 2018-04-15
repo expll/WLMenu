@@ -50,25 +50,19 @@
     NSDictionary *dic = dic1;
     if (dic == nil) {
         dic = @{@"brightness":@(0.67),
-                @"fan":@(1),
                 @"lineSpacing":@(2),
                 @"eye":@(1),
                 @"color":@(2)};
     }
     
     CGFloat brightness = [dic[@"brightness"] floatValue];
-    NSInteger fan = [dic[@"fan"] integerValue];
     NSInteger lineSpacing = [dic[@"lineSpacing"] integerValue];
     NSInteger eye = [dic[@"eye"] integerValue];
     NSInteger color = [dic[@"color"] integerValue];
     
     
     self.slider.value = brightness;
-    if (fan == 0) {
-        [self.fontFan setImage:[UIImage imageNamed:@"setting_font_fan"] forState:UIControlStateNormal];
-    } else {
-        [self.fontFan setImage:[UIImage imageNamed:@"setting_font_jian"] forState:UIControlStateNormal];
-    }
+
     
     [self.fontSpaceSmall setImage:[UIImage imageNamed:@"setting_space_small"] forState:UIControlStateNormal];
     [self.fontSpaceNormal setImage:[UIImage imageNamed:@"setting_space_normal"] forState:UIControlStateNormal];
