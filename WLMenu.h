@@ -34,15 +34,17 @@
 - (void)WLMenu_setting_more;// 更多设置
 
 
-//
-
+// 头部
+- (void)WLMenu_header_refresh; //刷新
+- (void)WLMenu_header_detail; //书籍详情
+- (void)WLMenu_header_share; //分享
 
 
 @end
 
 @interface WLMenu : UIView
 
-@property (nonatomic, weak)id delegate;
+@property (nonatomic, assign)id delegate;
 
 @property (nonatomic, strong)IBOutlet UIView *header;
 @property (nonatomic, strong)IBOutlet UIView *footer;

@@ -250,6 +250,9 @@
                                 <constraint firstAttribute="width" constant="40" id="VrI-Gx-ruB"/>
                             </constraints>
                             <state key="normal" image="tool_headphones.png"/>
+                            <connections>
+                                <action selector="callback_refresh" destination="iN0-l3-epB" eventType="touchUpInside" id="lWB-u6-8ke"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGM-rl-cB2">
                             <rect key="frame" x="285" y="23" width="40" height="35"/>
@@ -258,6 +261,9 @@
                                 <constraint firstAttribute="height" constant="35" id="I2Y-SL-9Xe"/>
                             </constraints>
                             <state key="normal" image="tool_details.png"/>
+                            <connections>
+                                <action selector="callback_detail" destination="iN0-l3-epB" eventType="touchUpInside" id="WBU-AZ-BGf"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPM-op-gop">
                             <rect key="frame" x="332" y="23" width="40" height="35"/>
@@ -266,6 +272,9 @@
                                 <constraint firstAttribute="height" constant="35" id="UJr-YF-4e5"/>
                             </constraints>
                             <state key="normal" image="tool_share.png"/>
+                            <connections>
+                                <action selector="callback_share" destination="iN0-l3-epB" eventType="touchUpInside" id="ufK-fE-qCc"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
@@ -626,7 +635,7 @@
             </constraints>
             <connections>
                 <outlet property="colorGray" destination="gMo-LY-tK6" id="UKZ-B2-LhJ"/>
-                <outlet property="colorGrayCheck" destination="bOi-6j-xQK" id="zk4-DB-XdH"/>
+                <outlet property="colorGrayCheck" destination="o4n-yI-Hp7" id="YRf-Ad-PiD"/>
                 <outlet property="colorGreen" destination="niU-vg-ODn" id="VGV-27-ZL8"/>
                 <outlet property="colorGreenCheck" destination="2u7-oE-tFE" id="OXE-6F-4nN"/>
                 <outlet property="colorPink" destination="1t7-0A-ggc" id="EQB-Tt-q3c"/>
@@ -50773,7 +50782,7 @@ vgAt28EALdvGAC3bzgAt29EALdvjAC3b5gAt2+sAAAAAAAAEAQAAAAAAAAA+AAAAAAAAAAAAAAAAAC3b
         <image name="setting_space_small.png" width="61" height="30"/>
         <image name="setting_theme_selected.png" width="40" height="40"/>
         <image name="tool_details.png" width="34" height="21"/>
-        <image name="tool_headphones.png" width="37" height="35"/>
+        <image name="tool_headphones.png" width="30" height="28"/>
         <image name="tool_share.png" width="34" height="21"/>
     </resources>
 </document>

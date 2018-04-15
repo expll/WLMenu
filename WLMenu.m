@@ -294,7 +294,25 @@
 }
 
 
+- (IBAction)callback_refresh {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_header_refresh)]) {
+        [self.delegate WLMenu_header_refresh];
+    }
+}
 
+
+- (IBAction)callback_detail {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_header_detail)]) {
+        [self.delegate WLMenu_header_detail];
+    }
+}
+
+
+- (IBAction)callback_share {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_header_share)]) {
+        [self.delegate WLMenu_header_share];
+    }
+}
 
 
 
