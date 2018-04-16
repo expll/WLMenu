@@ -16,7 +16,6 @@
 
 // 反馈
 - (void)WLMenu_advise;// 咨询建议
-- (void)WLMenu_bookerrorWithIndex:(NSInteger)index;// 书籍报错
 
 // 缓存
 - (void)WLMenu_download50;// 缓存50

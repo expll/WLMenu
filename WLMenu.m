@@ -157,11 +157,7 @@
 }
 
 - (IBAction)feedback:(id)sender {
-    UIView *bg = [self viewWithTag:101];
-    bg.hidden = NO;
-    UIView *v102 = [self viewWithTag:102]; // 书籍报错
-    UIView *v103 = [self viewWithTag:103];
-    v102.hidden = NO;
+    [self callback_advise:nil];
     
 }
 - (IBAction)feedback2:(id)sender {
@@ -181,12 +177,6 @@
     }
 }
 
-- (IBAction)callback_bookerrorWithIndex:(id)sender {
-    NSInteger tag = [sender tag];
-    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_bookerrorWithIndex:)]) {
-        [self.delegate WLMenu_bookerrorWithIndex:tag];
-    }
-}
 
 
 

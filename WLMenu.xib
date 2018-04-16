@@ -117,7 +117,7 @@
                                 <action selector="callback_space_big" destination="iN0-l3-epB" eventType="touchUpInside" id="gSk-E4-8Ra"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-9u-yhT">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-9u-yhT">
                             <rect key="frame" x="267" y="129" width="88" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="setting_eye.png"/>
@@ -517,9 +517,6 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="咨询建议"/>
-                            <connections>
-                                <action selector="callback_advise:" destination="iN0-l3-epB" eventType="touchUpInside" id="MeJ-C9-wPf"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -562,45 +559,30 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="错字漏字"/>
-                            <connections>
-                                <action selector="callback_bookerrorWithIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="1hB-xc-3Db"/>
-                            </connections>
                         </button>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-WC-ezN">
                             <rect key="frame" x="0.0" y="44" width="240" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="内容排版混乱"/>
-                            <connections>
-                                <action selector="callback_bookerrorWithIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="fit-7I-cwF"/>
-                            </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwK-rt-y99">
                             <rect key="frame" x="0.0" y="89" width="240" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="章节顺序错乱"/>
-                            <connections>
-                                <action selector="callback_bookerrorWithIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xic-QH-phR"/>
-                            </connections>
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVs-zV-2dx">
                             <rect key="frame" x="0.0" y="133" width="240" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="章节缺失或重复"/>
-                            <connections>
-                                <action selector="callback_bookerrorWithIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="p3S-Ty-OWL"/>
-                            </connections>
                         </button>
                         <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjF-u3-2Si">
                             <rect key="frame" x="0.0" y="176" width="240" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="更新延迟或断更"/>
-                            <connections>
-                                <action selector="callback_bookerrorWithIndex:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lqo-Il-H5y"/>
-                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
