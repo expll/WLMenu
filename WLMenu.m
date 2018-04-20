@@ -212,7 +212,7 @@
 }
 
 - (IBAction)download2:(id)sender {
-    [self download:sender];  
+    [self download:sender];
 }
 
 - (IBAction)night:(id)sender {
