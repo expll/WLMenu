@@ -18,8 +18,13 @@
 - (void)WLMenu_advise;// 咨询建议
 
 // 缓存
-- (void)WLMenu_download50;// 缓存50
-- (void)WLMenu_download100;// 缓存100
+- (void)WLMenu_download;// 缓存50
+
+// 夜间
+- (void)WLMenu_night;
+
+// 目录
+- (void)WLMenu_chapters;
 
 // 设置
 - (void)WLMenu_setting_lightWithValue:(CGFloat)value;// 亮度

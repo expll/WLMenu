@@ -307,6 +307,9 @@
                                     <state key="normal" title="目录">
                                         <color key="titleColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="chapters:" destination="iN0-l3-epB" eventType="touchUpInside" id="pOv-Pf-1p7"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-In-p8B">
                                     <rect key="frame" x="15" y="6" width="44" height="22"/>
@@ -315,6 +318,9 @@
                                         <constraint firstAttribute="width" constant="44" id="qoi-gN-PbR"/>
                                     </constraints>
                                     <state key="normal" image="directory.png"/>
+                                    <connections>
+                                        <action selector="chapters:" destination="iN0-l3-epB" eventType="touchUpInside" id="55k-of-wGx"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -335,6 +341,9 @@
                                         <constraint firstAttribute="height" constant="22" id="tQJ-UZ-AiQ"/>
                                     </constraints>
                                     <state key="normal" image="night_mode.png"/>
+                                    <connections>
+                                        <action selector="night:" destination="iN0-l3-epB" eventType="touchUpInside" id="4NF-yS-VMg"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCn-l0-eSL">
                                     <rect key="frame" x="15" y="28" width="44" height="20"/>
@@ -346,6 +355,9 @@
                                     <state key="normal" title="夜间">
                                         <color key="titleColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="night:" destination="iN0-l3-epB" eventType="touchUpInside" id="0i8-13-gfr"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>

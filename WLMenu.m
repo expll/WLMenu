@@ -181,28 +181,32 @@
 
 
 - (IBAction)download:(id)sender {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"缓存多少章节？" preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"缓存50章" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_download50)]) {
-            [self.delegate WLMenu_download50];
-        }
-    }];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_download)]) {
+        [self.delegate WLMenu_download];
+    }
     
-    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"缓存100章" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_download100)]) {
-            [self.delegate WLMenu_download100];
-        }
-    }];
-    
-    UIAlertAction *action3 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    
-    [alert addAction:action];
-    [alert addAction:action2];
-    [alert addAction:action3];
-    
-    [[[[UIApplication sharedApplication] delegate] window].rootViewController presentViewController:alert animated:YES completion:nil];
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"缓存多少章节？" preferredStyle:UIAlertControllerStyleActionSheet];
+//    UIAlertAction *action = [UIAlertAction actionWithTitle:@"缓存50章" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_download50)]) {
+//            [self.delegate WLMenu_download50];
+//        }
+//    }];
+//    
+//    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"缓存100章" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//        if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_download100)]) {
+//            [self.delegate WLMenu_download100];
+//        }
+//    }];
+//    
+//    UIAlertAction *action3 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//        
+//    }];
+//    
+//    [alert addAction:action];
+//    [alert addAction:action2];
+//    [alert addAction:action3];
+//    
+//    [[[[UIApplication sharedApplication] delegate] window].rootViewController presentViewController:alert animated:YES completion:nil];
     
                                 
 }
@@ -210,6 +214,17 @@
 - (IBAction)download2:(id)sender {
     [self download:sender];
 }
+
+- (IBAction)night:(id)sender {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_night)]) {
+        [self.delegate WLMenu_night];
+    }
+}
+
+- (IBAction)chapters:(id)sender {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_chapters)]) {
+        [self.delegate WLMenu_chapters];
+    }
 
 
 - (IBAction)callback_sliderChanged:(id)sender {
