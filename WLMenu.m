@@ -225,7 +225,7 @@
     if (self.delegate && [self.delegate respondsToSelector:@selector(WLMenu_chapters)]) {
         [self.delegate WLMenu_chapters];
     }
-
+}
 
 - (IBAction)callback_sliderChanged:(id)sender {
     UISlider *slider = (UISlider *)sender;
