@@ -43,6 +43,9 @@
 - (void)WLMenu_header_detail; //书籍详情
 - (void)WLMenu_header_share; //分享
 
+// 换源
+- (void)WLMenu_source;
+
 
 @end
 
