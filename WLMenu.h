@@ -39,6 +39,7 @@
 
 
 // 头部
+- (void)WLMenu_header_back; //关闭
 - (void)WLMenu_header_refresh; //刷新
 - (void)WLMenu_header_detail; //书籍详情
 - (void)WLMenu_header_share; //分享
