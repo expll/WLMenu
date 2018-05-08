@@ -87,6 +87,7 @@
 @property (nonatomic, strong)IBOutlet UIImageView *colorPinkCheck;
 
 @property (nonatomic, strong)IBOutlet UIButton *more;
+@property (nonatomic, strong)IBOutlet UIButton *backButton; //返回设置标题
 
 
 
