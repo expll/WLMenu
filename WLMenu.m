@@ -11,17 +11,14 @@
 
 @implementation WLMenu
 
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
+- (void)awakeFromNib {
+    [super awakeFromNib];
     UIView *bg = self.fontFan.superview;
     bg.frame = self.darkBackground.frame;
-
+    
     for (UIView *view in [bg subviews]) {
         [self reSetFrame:view];
     }
-    
 }
 
 - (void)reSetFrame:(UIView *)view {
