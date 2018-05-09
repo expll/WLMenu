@@ -11,17 +11,14 @@
 
 @implementation WLMenu
 
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
+- (void)awakeFromNib {
+    [super awakeFromNib];
     UIView *bg = self.fontFan.superview;
     bg.frame = self.darkBackground.frame;
-
+    
     for (UIView *view in [bg subviews]) {
         [self reSetFrame:view];
     }
-    
 }
 
 - (void)reSetFrame:(UIView *)view {
@@ -109,40 +106,9 @@
 
 - (IBAction)clickBackground:(id)sender {
     NSLog(@"menu!");
-    
-    // dsfasdf
-    
-    if (self.header.center.y == 32) {
-        // 影藏
-        [UIView animateWithDuration:0.3 animations:^{
-            self.header.center = CGPointMake(self.header.center.x, self.header.center.y-64);
-            self.footer.center = CGPointMake(self.footer.center.x, self.footer.center.y+55);
-            self.floatBtn.center = CGPointMake(self.floatBtn.center.x, self.floatBtn.center.y+130);
-            [[self viewWithTag:100] setHidden:YES];
-            self.darkBackground.hidden = YES;
-            [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
-            
-        } completion:^(BOOL finished) {
-            self.hidden = YES;
-            
-        }];
-    } else {
-        // 显示
-        [UIView animateWithDuration:0.3 animations:^{
-            self.header.center = CGPointMake(self.header.center.x, self.header.center.y+64);
-            self.footer.center = CGPointMake(self.footer.center.x, self.footer.center.y-55);
-            self.floatBtn.center = CGPointMake(self.floatBtn.center.x, self.floatBtn.center.y-130);
-            [[self viewWithTag:100] setHidden:YES];
-            self.darkBackground.hidden = YES;
-            [[UIApplication sharedApplication] setStatusBarHidden:NO animated:YES];
-            [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-            
-        } completion:^(BOOL finished) {
-            
-        }];
-        
-        
-    }
+    self.hidden = YES;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 
